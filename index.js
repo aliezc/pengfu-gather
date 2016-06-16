@@ -47,7 +47,7 @@ module.exports = function(pagefrom, pageto, cb){
 				if(finished == to - from + 1) cb.call(null, result);
 			},
 			error: function(err){
-				console.log('获取第' + page + '失败');
+				console.log('获取第' + page + '页失败');
 				finished++;
 				if(finished == to - from + 1) cb.call(null, result);
 			}
